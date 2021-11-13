@@ -25,7 +25,7 @@
 @message-global-caution__border-color: none;
 
 @header__background-color: false;
-@header-panel__background-color: @color-gray-middle4;
+@header-panel__background-color: #000;
 @header-panel__text-color: @color-white;
 @header-icons-color: @color-gray46;
 @header-icons-color-hover: @color-gray20;
@@ -46,11 +46,11 @@
 @h1__margin-bottom__desktop: @indent__xl;
 
 //  Footer
-@footer__background-color: @color-gray-light01;
+@footer__background-color: #333;
 @footer-links-separator-border-color: @color-gray-light4;
-@footer-links-color: @color-gray34;
-@footer-links-color-hover: @color-gray20;
-@footer-links-color-current: @primary__color__light;
+@footer-links-color: #fff; //@color-gray34;
+@footer-links-color-hover: @color-orange-red1;//@color-gray20;
+@footer-links-color-current: @color-orange-red1; //@primary__color__light;
 
 //  Layered navigation
 @filter-title-background-color: @color-gray94;
@@ -90,12 +90,12 @@
     //  ---------------------------------------------
 
     .page-header {
-        .lib-css(background-color, @header__background-color);
+
         border-bottom: 1px solid @border-color__base;
         margin-bottom: @indent__base;
-
+        .lib-css(background-color, #333);
         .panel.wrapper {
-            .lib-css(background-color, @header-panel__background-color);
+            //.lib-css(background-color, @header-panel__background-color);
             .lib-css(color, @header-panel__text-color);
         }
     }
@@ -495,7 +495,7 @@
         margin-bottom: 0;
 
         .panel.wrapper {
-            border-bottom: 1px solid @secondary__color;
+            border-bottom: 1px solid #000;  // @secondary__color
             .lib-css(background-color, @header-panel__background-color);
         }
 

@@ -10,6 +10,7 @@
 //  Theme file should contain declarations (overrides) ONLY OF EXISTING variables
 //  Otherwise this theme won't be available for parent nesting
 //  All new variables should be placed in local theme lib or local theme files
+@secondary__color:  #e8e8e8;
 
 //
 //  Typography
@@ -58,7 +59,7 @@
 //  Navigation
 //  ---------------------------------------------
 
-@navigation__background: @color-gray94;
+@navigation__background:  #d1d1d1; // #999 ; //@color-gray94;
 @navigation-level0-item__active__color: @primary__color;
 
 @submenu-item__active__color: @navigation-level0-item__active__color;
@@ -114,11 +115,15 @@
 @button__background: @color-gray-darken0;
 @button__border: 1px solid @border-color__base;
 @button__hover__color: @button__color;
-@button__hover__background: darken(@button__background, 5%);
+@button__hover__background: @color-orange-red1;//darken(@button__background, 5%);
 @button__active__background: @color-gray-darken1;
 
 //  Primary button
-@button-primary__hover__color: @color-white;
+
+
+@button-primary__background: #999;
+@button__hover__background: #999;
+@button-primary__hover__background: @color-orange-red1;
 @button-primary__active__background: @link__hover__color;
 @button-primary__active__border: 1px solid @link__hover__color;
 @button-primary__active__color: @color-white;
@@ -293,4 +298,4 @@
 //  Footer
 //  ---------------------------------------------
 
-@copyright__background-color: @color-gray-middle4;
+@copyright__background-color: #333;
